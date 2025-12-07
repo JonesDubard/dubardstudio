@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dubard Studio — Web Design & Dev</title>
+  <meta name="description" content="Dubard Studio — Web design, front-end development and QA for SMEs, NGOs and startups." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/Icons/moon.png" />
+  <!-- enable JS-only behavior -->
+  <script>document.documentElement.classList.add('has-js');</script>
+  <noscript><style>.section-appear{ opacity:1 !important; transform:none !important; }</style></noscript>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="/" aria-label="Dubard Studio Home"><strong>Dubard Studio</strong></a>
+        <span class="tag">Web Design · Web Dev · QA</span>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Theme toggle -->
+        <button id="themeToggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">
+          <span class="sun" aria-hidden="true" >☀️</span>
+          <span class="moon" aria-hidden="true">🌙</span>
+        </button>
+
+        <!-- Hamburger -->
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <svg id="hamburgerIcon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile dropdown (sticky) -->
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <div class="mobile-nav-inner container">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#work" class="mobile-link">Work</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#testimonials" class="mobile-link">Testimonials</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero (kept short; About below) -->
+    <section class="hero section-appear" id="home" tabindex="-1">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 class="headline">Web Designer & Web Developer</h1>
+          <p class="lead">I design and build clean, mobile-first websites for businesses, NGOs and startups. Fast, accessible and focused on conversion.</p>
+          <p class="hero-cta">
+            <a href="#work" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Get in touch</a>
+          </p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="images/Mocku.png" alt="Website mockup placeholder" />
+        </div>
+      </div>
+    </section>
+
+    <!-- New About hero-style section -->
+    <section id="about" class="about section-appear" aria-labelledby="aboutHeading">
+      <div class="container about-inner">
+        <div class="about-media">
+          <img src="images/Profilepic.jpeg" alt="Portrait placeholder" class="avatar">
+        </div>
+        <div class="about-content">
+          <h2 id="aboutHeading">Crafting Digital Experiences</h2>
+          <h3 class="subhead">Hello, I'm <strong>Dubard Jones</strong></h3>
+          <p class="about-copy">I'm a Web Designer, Front-End Developer, and Software QA Specialist with over 5 years of experience creating stunning digital experiences. My expertise spans across web design, front-end development, and quality assurance testing. I believe in creating websites that are not only visually appealing but also highly functional and user-friendly.</p>
+          <p class="about-copy">When I'm not coding, you'll find me exploring new design trends, contributing to open-source projects, or mentoring aspiring developers.</p>
+
+          <div class="about-actions">
+            <!-- replace href with your real CV link -->
+            <a href="files/Dubard-Jones-FlowCV-Resume-20251125 (1).pdf" class="btn" download>Download CV</a>
+            <a href="#contact" class="btn btn-outline">Work with me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section section-appear" aria-labelledby="servicesHeading">
+      <div class="container">
+        <h2 id="servicesHeading">Services</h2>
+        <p class="muted">Solutions tailored for small businesses, NGOs and startups.</p>
+    
+        <div class="services-grid">
+    
+          <!-- Web Design -->
+          <article class="service" tabindex="0">
+            <div class="service-icon">
+              <img src="images/Icons/art.png" alt="Art Icon">
+            </div>
+            <div class="service-head">
+              <h3>Web Design</h3>
+              <p class="service-tagline">Clean UI, branding-aware layouts, and mobile-first design tailored to your audience.</p>
+            </div>
+            <ul class="subservices">
+              <li>UI/UX Design</li>
+              <li>Wireframing</li>
+              <li>Prototyping</li>
+              <li>Brand Identity</li>
+            </ul>
+            <div class="service-cta">
+              <a class="link-getstarted" href="#contact">Get Started →</a>
+            </div>
+          </article>
+    
+          <!-- Development -->
+          <article class="service" tabindex="0">
+            <div class="service-icon">
+              <img src="images/Icons/code.png" alt="Code Icon">
+            </div>
+            <div class="service-head">
+              <h3>Development</h3>
+              <p class="service-tagline">Modern, performant front-end and WordPress builds focused on real results.</p>
+            </div>
+            <ul class="subservices">
+              <li>WordPress & CMS</li>
+              <li>HTML / CSS / JS</li>
+              <li>React components</li>
+              <li>Performance</li>
+            </ul>
+            <div class="service-cta">
+              <a class="link-getstarted" href="#contact">Get Started →</a>
+            </div>
+          </article>
+    
+          <!-- QA & Usability -->
+          <article class="service" tabindex="0">
+            <div class="service-icon">
+              <img src="images/Icons/verified.png" alt="Verified Icon">
+            </div>
+            <div class="service-head">
+              <h3>QA & Usability</h3>
+              <p class="service-tagline">Functional testing, cross-device QA and usability tweaks to reduce friction and bugs.</p>
+            </div>
+            <ul class="subservices">
+              <li>Functional Testing</li>
+              <li>Cross-device QA</li>
+              <li>Usability Testing</li>
+              <li>Accessibility Review</li>
+            </ul>
+            <div class="service-cta">
+              <a class="link-getstarted" href="#contact">Get Started →</a>
+            </div>
+          </article>
+    
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Portfolio -->
+    <section id="work" class="section section-appear" aria-labelledby="workHeading">
+      <div class="container">
+        <h2 id="workHeading">Portfolio</h2>
+        <p class="muted">A Selection of my recent work across web design,development and wordpress projects.</p>
+        <div class="portfolio-grid">
+          <article class="project" tabindex="0">
+            <div class="project-media"><img src="images/Moschify.jpeg" alt="Business Website demo screenshot"></div>
+            <h4>Business Website (Demo)</h4>
+            <p>WordPress site with responsive layout, contact form and SEO basics.</p>
+            <a class="project-link" href="https://5moshifyyywolfgang.netlify.app/">View project →</a>
+          </article>
+
+          <article class="project" tabindex="0">
+            <div class="project-media"><img src="images/Mocsahomepage.jpeg" alt="NGO landing page demo screenshot"></div>
+            <h4>NGO Landing Page</h4>
+            <p>Donation-focused landing page with simple CMS integration.</p>
+            <a class="project-link" href="https://www.mocsaswitzerland.org/">View project →</a>
+          </article>
+
+          <article class="project" tabindex="0">
+            <div class="project-media"><img src="images/FilterMe.jpeg" alt="Portfolio demo screenshot"></div>
+            <h4>Resturant Filter Menu</h4>
+            <p>A dynamic filtering menu system tailored for an ideal resturant interface.</p>
+            <a class="project-link" href="https://shopping-menu-demo.netlify.app/">View project →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section section-appear" aria-labelledby="testimonialsHeading">
+      <div class="container">
+        <h2 id="testimonialsHeading">Testimonials</h2>
+        <p class="muted">Client Stories — Don’t just take my word for it.</p>
+
+        <div class="testimonials-wrap" aria-live="polite">
+          <div id="testimonialList" class="testimonial-list">
+            <!-- testimonial items -->
+            <blockquote class="testimonial" data-client="Ama Kouyate">
+              <p class="quote">"Dubard delivered a modern site for our NGO — faster, easier to update, and the community loves it."</p>
+              <footer class="client"><img src="images/Lucina.jpg" alt="" class="avatar-sm"> <span class="client-name">Lucina Blatty</span></footer>
+            </blockquote>
+
+            <blockquote class="testimonial" data-client="John Doe">
+              <p class="quote">"Professional and patient — Dubard handled our redesign and improved conversions within weeks."</p>
+              <footer class="client"><img src="images/Licosteam.jpg" alt="" class="avatar-sm"> <span class="client-name">Licos Team</span></footer>
+            </blockquote>
+
+            <!-- testimonial items 
+            <blockquote class="testimonial" data-client="Marta Silva">
+              <p class="quote">"Great QA attention to detail — we launched with confidence and minimal post-launch fixes."</p>
+              <footer class="client"><img src="images/avatar3.png" alt="" class="avatar-sm"> <span class="client-name">Marta Silva</span></footer>
+            </blockquote>
+            -->
+          </div>
+
+          <div class="testimonial-controls">
+            <button id="prevTestimonial" aria-label="Previous testimonial">◀</button>
+            <button id="nextTestimonial" aria-label="Next testimonial">▶</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-appear" aria-labelledby="contactHeading">
+      <div class="container contact-inner">
+        <div class="contact-form-wrap">
+          <h2 id="contactHeading">Contact</h2>
+          <h3 class="subhead">Let's Work Together</h3>
+          <p class="muted">Have a project in mind? I'd love to hear from you. Send me a message and let's create something amazing.</p>
+
+          <form id="contactForm" name="contact" method="POST" data-netlify="true" aria-label="Contact form">
+  <input type="hidden" name="form-name" value="contact">
+  <label>
+    <span>Name</span>
+    <input type="text" name="name" placeholder="Your name" required />
+  </label>
+
+  <label>
+    <span>Email</span>
+    <input type="email" name="email" placeholder="your@company.com" required />
+  </label>
+
+  <label>
+    <span>Message</span>
+    <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+  </label>
+
+  <div class="form-ctas">
+    <button type="submit" class="btn">Send</button>
+    <a class="btn btn-outline" href="mailto:hellodubardstudio@gmail.com">Email</a>
+  </div>
+</form>
+        </div>
+
+        <aside class="contact-details" aria-label="Contact details">
+          <div class="contact-card">
+            <h4>Contact</h4>
+            <p><strong>Email:</strong> <a href="mailto:hellodubardstudio@gmail.com">hellodubardstudio@gmail.com</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/+15551234567">+49 (152) 316-57334</a></p>
+            <p><strong>Location:</strong> Available Worldwide</p>
+
+            <div class="follow-me">
+              <h5>Follow Me</h5>
+              <div class="social-icons social-icons--medium">
+                <a class="icon-only" href="https://github.com/JonesDubard" aria-label="GitHub" target="_blank" rel="noopener">
+                  <img src="images/Icons/github.png" alt="">
+                </a>
+              
+                <a href="https://www.linkedin.com/in/jonesdubard" aria-label="LinkedIn" target="_blank" rel="noopener">
+                  <img src="images/Icons/linkedin.png" alt="">
+                  <span class="sr-only">LinkedIn</span> <!-- optional text for screen readers -->
+                </a>
+              
+                <a class="icon-round" href="https://wa.me/+4915231657334" aria-label="WhatsApp" target="_blank" rel="noopener">
+                  <img src="images/Icons/apple.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Back to top -->
+      <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Dubard Studio — Built by Dubard Jones. <a href="mailto:hellodubardstudio@gmail.com">hellodubardstudio@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
