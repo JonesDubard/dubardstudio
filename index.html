@@ -240,8 +240,8 @@
           <h3 class="subhead">Let's Work Together</h3>
           <p class="muted">Have a project in mind? I'd love to hear from you. Send me a message and let's create something amazing.</p>
 
-          <form id="contactForm" name="contact" method="POST" data-netlify="true" aria-label="Contact form">
-  <input type="hidden" name="form-name" value="contact">
+          <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success">
+            <input type="hidden" name="form-name" value="contact">
   <label>
     <span>Name</span>
     <input type="text" name="name" placeholder="Your name" required />
