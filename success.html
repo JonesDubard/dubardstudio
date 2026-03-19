@@ -1,9 +1,40 @@
 <!doctype html>
-<html>
-<head><title>Message Sent</title></head>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Message Sent — Dubard Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#fafaf8;--text:#0d1117;--muted:#6b7280;--accent:#c8922a;--accent-weak:rgba(200,146,42,0.09);--panel:#fff;--font-display:'Syne',sans-serif;--font-body:'DM Sans',sans-serif}
+    :root[data-theme="dark"]{--bg:#08101e;--text:#e8f0fa;--muted:#8898aa;--accent:#e0a94a;--panel:#0d1826}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-body);background:var(--bg);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+    .card{background:var(--panel);border-radius:20px;padding:48px 40px;max-width:480px;width:100%;text-align:center;box-shadow:0 16px 48px rgba(10,10,20,0.1);border:1px solid rgba(0,0,0,0.05);animation:slideUp 0.5s cubic-bezier(.2,.9,.3,1) both}
+    html[data-theme="dark"] .card{border-color:rgba(255,255,255,0.05)}
+    @keyframes slideUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    .check{width:72px;height:72px;border-radius:50%;background:var(--accent-weak);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:2rem;animation:pop 0.4s 0.3s cubic-bezier(.2,.9,.3,1) both}
+    @keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+    h1{font-family:var(--font-display);font-size:1.9rem;font-weight:800;letter-spacing:-.03em;margin-bottom:12px}
+    p{color:var(--muted);line-height:1.65;margin-bottom:28px;font-size:.97rem}
+    .btn{display:inline-block;text-decoration:none;font-family:var(--font-display);font-weight:700;font-size:.92rem;padding:11px 24px;border-radius:10px;background:var(--accent);color:#fff;box-shadow:0 6px 20px rgba(200,146,42,0.3);transition:transform .3s,box-shadow .3s}
+    .btn:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(200,146,42,0.35)}
+    .details{font-size:.82rem;color:var(--muted);margin-top:20px}
+    .details a{color:var(--accent);text-decoration:none}
+  </style>
+</head>
 <body>
-  <h1>Thank you!</h1>
-  <p>Your message has been sent successfully.</p>
-  <a href="/">Return Home</a>
+  <div class="card">
+    <div class="check">✓</div>
+    <h1>Message Received!</h1>
+    <p>Thanks for reaching out to <strong>Dubard Studio</strong>. I'll review your message and get back to you within 24–48 hours.</p>
+    <a href="/" class="btn">← Back to Home</a>
+    <p class="details">Need a faster reply? <a href="https://wa.me/4915231657334">WhatsApp me directly</a></p>
+  </div>
+  <script>
+    const saved=localStorage.getItem('dubard-theme'),prefersDark=window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme',saved||(prefersDark?'dark':'light'));
+  </script>
 </body>
 </html>
