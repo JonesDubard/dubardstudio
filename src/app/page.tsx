@@ -71,9 +71,9 @@ export default async function Home() {
             </div>
 
             <div className="about-content">
-              <span className="section-label">About Me</span>
+              <span className="section-label">Our Story</span>
               <h2 id="aboutHeading">Crafting Digital Experiences</h2>
-              <p className="about-name">Hello, I'm <strong>Dubard Jones</strong></p>
+              <p className="about-name">Hello, We are <strong>Dubard Studio</strong></p>
 
               <p className="about-copy">{settings.aboutPara1}</p>
               {settings.aboutPara2 && (
@@ -87,11 +87,11 @@ export default async function Home() {
                   <span className="stat-label">Years Experience</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-number">20+</span>
+                  <span className="stat-number">10+</span>
                   <span className="stat-label">Projects Delivered</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-number">100%</span>
+                  <span className="stat-number">99%</span>
                   <span className="stat-label">Client Satisfaction</span>
                 </div>
               </div>
@@ -99,10 +99,10 @@ export default async function Home() {
               <div className="about-actions">
                 {settings.cvFile && (
                   <a href={settings.cvFile} className="btn btn-primary" download>
-                    Download CV
+                    Download Our Company Profile
                   </a>
                 )}
-                <a href="#contact" className="btn btn-outline">Work with me</a>
+                <a href="#contact" className="btn btn-outline">Work with us</a>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@ export default async function Home() {
         {/* ── SERVICES ──────────────────────────────────── */}
         <section id="services" className="section-services" aria-labelledby="servicesHeading">
           <div className="container">
-            <span className="section-label">What I Do</span>
+            <span className="section-label">What We Do</span>
             <h2 id="servicesHeading" className="section-title">Services</h2>
             <p className="section-desc">Solutions tailored for small businesses, NGOs and startups.</p>
 
@@ -191,7 +191,7 @@ export default async function Home() {
           <div className="container">
             <span className="section-label">Social Proof</span>
             <h2 id="testimonialsHeading" className="section-title">Client Stories</h2>
-            <p className="section-desc">Don't just take my word for it.</p>
+            <p className="section-desc">Don't just take our word for it.</p>
 
             {/* ADD CONTENT: Add/edit testimonials in content/testimonials/ */}
             <TestimonialsCarousel items={testimonials} />
@@ -204,7 +204,7 @@ export default async function Home() {
             <span className="section-label">Let's Talk</span>
             <h2 id="contactHeading" className="section-title">Get in Touch</h2>
             <p className="section-desc" style={{ marginBottom: '36px' }}>
-              Have a project in mind? I'd love to hear from you.
+              Have a project in mind? We'd love to hear from you.
             </p>
 
             <div className="contact-inner">
@@ -234,11 +234,6 @@ export default async function Home() {
                 </a>
 
                 <div className="social-links">
-                  {settings.github && (
-                    <a href={settings.github} className="social-link" target="_blank" rel="noopener" aria-label="GitHub">
-                      <img src="/images/Icons/github.png" alt="GitHub" />
-                    </a>
-                  )}
                   {settings.linkedin && (
                     <a href={settings.linkedin} className="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
                       <img src="/images/Icons/linkedin.png" alt="LinkedIn" />
@@ -258,7 +253,7 @@ export default async function Home() {
 
       <footer className="site-footer">
         <div className="container footer-inner">
-          <p>© {new Date().getFullYear()} Dubard Studio — Built by Dubard Jones</p>
+          <p>© {new Date().getFullYear()} Dubard Studio — Built by us</p>
           <a href={`mailto:${settings.email}`}>{settings.email}</a>
         </div>
       </footer>

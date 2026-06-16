@@ -30,7 +30,7 @@ collections:
           - { label: "Hero Mockup Image", name: heroImage, widget: image, required: false }
           - { label: "Our Story (Paragraph 1)", name: aboutPara1, widget: text }
           - { label: "Our Story (Paragraph 2)", name: aboutPara2, widget: text, required: false }
-          - { label: "CV/Resume File (PDF)", name: cvFile, widget: file, required: false }
+          - { label: "Company Profile (PDF)", name: cvFile, widget: file, required: false }
 
   # ─── PROJECTS ────────────────────────────────────────────
   - name: projects
