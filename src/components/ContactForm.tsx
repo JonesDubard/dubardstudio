@@ -4,13 +4,11 @@
 export default function ContactForm({ email }: { email: string }) {
   return (
     <form
-      className="contact-form"
-      name="contact"
-      method="POST"
-      action="/success"
-      data-netlify="true"
-      netlify-honeypot="bot-field"
-    >
+  className="contact-form"
+  name="contact"
+  method="POST"
+  action="/success"
+>
       <input type="hidden" name="form-name" value="contact" />
       <p style={{ display: 'none' }}>
         <label>Don't fill this out: <input name="bot-field" /></label>
