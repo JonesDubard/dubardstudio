@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: JonesDubard/dubardstudio   # ← REPLACE with your GitHub username/repo
+  name: git-gateway
   branch: main
 
 media_folder: public/images/uploads
@@ -23,14 +22,14 @@ collections:
           - { label: "Hero Headline", name: heroHeadline, widget: string }
           - { label: "Hero Sub-headline", name: heroSubheadline, widget: text }
           - { label: "Email", name: email, widget: string }
-          - { label: "WhatsApp Number (international format, e.g. +2319000000)", name: whatsapp, widget: string }
+          - { label: "WhatsApp Number (international format, e.g. +231773295060)", name: whatsapp, widget: string }
           - { label: "Location", name: location, widget: string }
           - { label: "GitHub URL", name: github, widget: string, required: false }
           - { label: "LinkedIn URL", name: linkedin, widget: string, required: false }
           - { label: "Profile Photo", name: profilePhoto, widget: image }
           - { label: "Hero Mockup Image", name: heroImage, widget: image, required: false }
-          - { label: "About Bio (Paragraph 1)", name: aboutPara1, widget: text }
-          - { label: "About Bio (Paragraph 2)", name: aboutPara2, widget: text, required: false }
+          - { label: "Our Story (Paragraph 1)", name: aboutPara1, widget: text }
+          - { label: "Our Story (Paragraph 2)", name: aboutPara2, widget: text, required: false }
           - { label: "CV/Resume File (PDF)", name: cvFile, widget: file, required: false }
 
   # ─── PROJECTS ────────────────────────────────────────────
