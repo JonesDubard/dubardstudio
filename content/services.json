@@ -1,22 +1,42 @@
 {
   "services": [
     {
-      "title": "Web Design",
-      "tagline": "Clean UI, branding-aware layouts, and mobile-first design tailored to your audience.",
+      "title": "Brand Identity & Strategy",
+      "tagline": "For: \"We don't look like a real business yet.\"  We build the logo, colors, and message that make customers trust you before they've even spoken to you.",
       "icon": "art.png",
-      "items": ["UI/UX Design", "Wireframing", "Prototyping", "Brand Identity"]
+      "items": [
+        "UI/UX Design",
+        "Wireframing",
+        "Prototyping",
+        "Brand Identity"
+      ]
     },
     {
-      "title": "Development",
-      "tagline": "Modern, performant front-end and WordPress builds focused on real results.",
+      "title": "Website Design & Development",
+      "tagline": "For: \"Customers can't find us, or don't trust what they find.\"  We design and build fast, mobile-first websites that work on the same phones your customers use, and turn visits into calls, orders, and sign-ups.",
       "icon": "code.png",
-      "items": ["WordPress & CMS", "HTML / CSS / JS", "React Components", "Performance Optimization"]
+      "items": [
+        "WordPress & CMS",
+        "HTML / CSS / JS",
+        "React Components",
+        "Performance Optimization"
+      ]
     },
     {
-      "title": "QA & Usability",
-      "tagline": "Functional testing, cross-device QA and usability tweaks to reduce friction and bugs.",
+      "title": "Quality Assurance & Support",
+      "tagline": "For: \"We launched something and it broke, or no one tested it.\"  We test every page, button, and form across real devices before launch, and stay on for support after, so a broken site never costs you a sale.",
       "icon": "verified.png",
-      "items": ["Functional Testing", "Cross-device QA", "Usability Testing", "Accessibility Review"]
+      "items": [
+        "Functional Testing",
+        "Cross-device QA",
+        "Usability Testing",
+        "Accessibility Review"
+      ]
+    },
+    {
+      "title": "Digital & IT Solutions",
+      "tagline": "For: \"We need more than a website; we need our systems to work together.\"  We set up the tools behind the scenes; booking systems, inventory, internal dashboards, so your business runs as smoothly online as it does in person.",
+      "icon": "it-solutions.png"
     }
   ]
 }
