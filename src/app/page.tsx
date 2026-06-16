@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { getSettings, getProjects, getTestimonials, getServices } from '@/lib/content';
+import { getSettings, getProjects, getTestimonials, getServices, type Service } from '@/lib/content';
 import Header from '@/components/Header';
 import TestimonialsCarousel from '@/components/TestimonialsCarousel';
 import ContactForm from '@/components/ContactForm';
@@ -116,7 +116,7 @@ export default async function Home() {
             <p className="section-desc">Solutions tailored for small businesses, NGOs and startups.</p>
 
             <div className="services-grid">
-              {services.map(service => (
+            {services.map((service: Service) => (
                 <article key={service.title} className="service-card" tabIndex={0}>
                   <div className="service-icon">
                     {/* ADD CONTENT: Place icon images in /public/images/icons/ */}
