@@ -31,11 +31,11 @@ export default async function Home() {
               </div>
               <h1 className="hero-headline">
                 {/* ADD CONTENT: Update hero headline in content/settings.json */}
-                Web Designer<br />& <em>Developer</em>
+                Web Design<br />& <em>Digital Solutions</em>
               </h1>
               <p className="hero-lead">{settings.heroSubheadline}</p>
               <div className="hero-ctas">
-                <a href="#work" className="btn btn-primary">View My Work</a>
+                <a href="#work" className="btn btn-primary">View Our Work</a>
                 <a href="#contact" className="btn btn-outline">Get in Touch</a>
               </div>
             </div>
