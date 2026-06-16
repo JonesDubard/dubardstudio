@@ -1,16 +1,16 @@
 {
+  "heroImage": "/images/Mocku.png",
+  "github": "",
+  "aboutPara1": "Dubard Studio was founded to close a gap we kept seeing: Liberian businesses with real ambition, held back by websites that didn't match it. We're a team of designers, developers, and QA specialists who build digital experiences, websites, brand identities, and the tools behind them, for businesses ready to compete locally and globally. Every project starts with your goals, not our portfolio.",
+  "aboutPara2": "We understand both sides of this market, the realities of building and paying for digital work in Liberia, and the expectations of clients in the diaspora who need to trust a team they can't sit across the table from. That's why we communicate clearly at every stage, work in U.S. dollars or Liberian dollars, and keep you updated by WhatsApp from kickoff to launch.",
+  "profilePhoto": "/images/Profilepic.jpeg",
+  "tagline": "Websites That Work As Hard As You Do",
+  "heroHeadline": "Your Business Is Ready For The World. Is Your Website?",
+  "cvFile": "/files/Dubard-Jones-CV.pdf",
   "siteTitle": "Dubard Studio",
-  "tagline": "Web Design · Web Dev · QA",
-  "heroHeadline": "Web Designer & Developer",
-  "heroSubheadline": "I design and build clean, mobile-first websites for businesses, NGOs and startups. Fast, accessible and focused on conversion.",
-  "email": "hellodubardstudio@gmail.com",
   "whatsapp": "+231773295060",
   "location": "Monrovia, Liberia · Available Worldwide",
-  "github": "https://github.com/JonesDubard",
-  "linkedin": "https://www.linkedin.com/in/jonesdubard",
-  "profilePhoto": "/images/Profilepic.jpeg",
-  "heroImage": "/images/Mocku.png",
-  "aboutPara1": "I'm a Web Designer, Front-End Developer, and Software QA Specialist with over 5 years of experience creating stunning digital experiences. My expertise spans web design, front-end development, and quality assurance testing.",
-  "aboutPara2": "When I'm not coding, you'll find me exploring new design trends, contributing to open-source projects, or mentoring aspiring developers.",
-  "cvFile": "/files/Dubard-Jones-CV.pdf"
+  "heroSubheadline": "We're a Liberian studio that builds websites, brands, and digital tools for businesses here and abroad, built right, delivered on time, and supported by a team that understands both markets.",
+  "email": "hellodubardstudio@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/jonesdubard"
 }
