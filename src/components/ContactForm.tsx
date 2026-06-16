@@ -26,7 +26,7 @@ export default function ContactForm({ email }: { email: string }) {
       });
 
       if (res.ok) {
-        showToast('✓ Message sent — I'll get back to you soon!');
+        showToast("✓ Message sent — I'll get back to you soon!");
         form.reset();
       } else {
         showToast('Something went wrong. Try WhatsApp below.');
