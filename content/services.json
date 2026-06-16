@@ -2,27 +2,47 @@
   "services": [
     {
       "title": "Brand Identity & Strategy",
-      "tagline": "We build the logo, colors, and message that make customers trust you before they've even spoken to you.",
+      "tagline": "For: \"We don't look like a real business yet.\" We build the logo, colors, and message that make customers trust you before they've even spoken to you.",
       "icon": "art.png",
-      "items": ["Logo & Visual Identity", "Brand Messaging", "Style Guides", "Marketing Materials"]
+      "items": [
+        "Logo & Visual Identity",
+        "Brand Messaging & Positioning",
+        "Style Guides",
+        "Marketing & Collateral Design"
+      ]
     },
     {
       "title": "Website Design & Development",
-      "tagline": "We design and build fast, mobile-first websites that work on the same phones your customers use, and turn visits into calls, orders, and sign-ups.",
+      "tagline": "For: \"Customers can't find us, or don't trust what they find.\" We design and build fast, mobile‑first websites that work on the same phones your customers use, and turn visits into calls, orders, and sign‑ups.",
       "icon": "code.png",
-      "items": ["UI/UX Design", "WordPress & CMS", "Custom Development", "Mobile-First Builds"]
+      "items": [
+        "UI/UX Design",
+        "WordPress & Custom CMS",
+        "Front‑end Development (HTML/CSS/JS, React)",
+        "Performance & Mobile‑First Optimization"
+      ]
     },
     {
       "title": "Quality Assurance & Support",
-      "tagline": "We test every page, button, and form across real devices before launch, and stay on for support after, so a broken site never costs you a sale.",
+      "tagline": "For: \"We launched something and it broke, or no one tested it.\" We test every page, button, and form across real devices before launch, and stay on for support after, so a broken site never costs you a sale.",
       "icon": "verified.png",
-      "items": ["Functional Testing", "Cross-Device QA", "Accessibility Review", "Ongoing Support"]
+      "items": [
+        "Functional & Cross‑Device Testing",
+        "Usability & Accessibility Reviews",
+        "Bug Reporting & Resolution",
+        "Post‑Launch Maintenance & Support"
+      ]
     },
     {
       "title": "Digital & IT Solutions",
-      "tagline": "We set up the tools behind the scenes, booking systems, inventory, internal dashboards, so your business runs as smoothly online as it does in person.",
+      "tagline": "For: \"We need more than a website; we need our systems to work together.\" We set up the tools behind the scenes — booking systems, inventory, internal dashboards — so your business runs as smoothly online as it does in person.",
       "icon": "it-solutions.png",
-      "items": ["Booking & Scheduling Systems", "Inventory Tools", "Internal Dashboards", "Systems Integration"]
+      "items": [
+        "Booking & Scheduling Systems",
+        "Inventory Management Tools",
+        "Internal Dashboards & Reporting",
+        "Systems Integration & Automation"
+      ]
     }
   ]
 }

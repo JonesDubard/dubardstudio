@@ -1,15 +1,16 @@
 {
   "siteTitle": "Dubard Studio",
-  "tagline": "Websites That Work As Hard As You Do",
+  "tagline": "Websites That Work As Hard As You Do.",
   "heroHeadline": "Your Business Is Ready For The World. Is Your Website?",
-  "heroSubheadline": "We're a Liberian studio that builds websites, brands, and digital tools for businesses here and abroad, built right, delivered on time, and supported by a team that understands both markets.",
+  "heroSubheadline": "We're a Liberian studio that builds websites, brands, and digital tools for businesses here and abroad — delivered on time, supported by a team that understands both markets.",
+  "heroImage": "/images/Mocku.png",
+  "profilePhoto": "/images/Profilepic.jpeg",
+  "aboutPara1": "Dubard Studio was founded to close a gap we kept seeing: Liberian businesses with real ambition, held back by websites that didn't match it. We're a team of designers, developers, and QA specialists who build digital experiences — websites, brand identities, and the tools behind them — for businesses ready to compete locally and globally. Every project starts with your goals, not our portfolio.",
+  "aboutPara2": "We understand both sides of this market: the realities of building and paying for digital work in Liberia, and the expectations of clients in the diaspora who need to trust a team they can't sit across the table from. That's why we communicate clearly at every stage, work in U.S. dollars or Liberian dollars, and keep you updated by WhatsApp from kickoff to launch.",
+  "cvFile": "/files/Dubard-Studio-Company-Profile.pdf",
   "email": "hellodubardstudio@gmail.com",
-  "whatsapp": "+231900000000",
+  "whatsapp": "+231773295060",
   "location": "Monrovia, Liberia · Available Worldwide",
   "linkedin": "https://www.linkedin.com/in/jonesdubard",
-  "profilePhoto": "/images/Profilepic.jpeg",
-  "heroImage": "/images/Mocku.png",
-  "aboutPara1": "Dubard Studio was founded to close a gap we kept seeing: Liberian businesses with real ambition, held back by websites that didn't match it. We're a team of designers, developers, and QA specialists who build digital experiences — websites, brand identities, and the tools behind them, for businesses ready to compete locally and globally. Every project starts with your goals, not our portfolio",
-  "aboutPara2": "We understand both sides of this market, the realities of building and paying for digital work in Liberia, and the expectations of clients in the diaspora who need to trust a team they can't sit across the table from. That's why we communicate clearly at every stage, work in U.S. dollars or Liberian dollars, and keep you updated by WhatsApp from kickoff to launch.",
-  "cvFile": "/files/Dubard-Jones-CV.pdf"
+  "github": ""
 }
