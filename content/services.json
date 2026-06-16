@@ -1,0 +1,22 @@
+{
+  "services": [
+    {
+      "title": "Web Design",
+      "tagline": "Clean UI, branding-aware layouts, and mobile-first design tailored to your audience.",
+      "icon": "art.png",
+      "items": ["UI/UX Design", "Wireframing", "Prototyping", "Brand Identity"]
+    },
+    {
+      "title": "Development",
+      "tagline": "Modern, performant front-end and WordPress builds focused on real results.",
+      "icon": "code.png",
+      "items": ["WordPress & CMS", "HTML / CSS / JS", "React Components", "Performance Optimization"]
+    },
+    {
+      "title": "QA & Usability",
+      "tagline": "Functional testing, cross-device QA and usability tweaks to reduce friction and bugs.",
+      "icon": "verified.png",
+      "items": ["Functional Testing", "Cross-device QA", "Usability Testing", "Accessibility Review"]
+    }
+  ]
+}
