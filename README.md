@@ -1,7 +1,24 @@
 # Dubard Studio — Portfolio Site
 
 Next.js 14 portfolio with Decap CMS for browser-based content editing.  
-**No code required to update content once deployed.**
+**Evolving** toward Verdant website blueprint (see `docs/architecture.md`) — incremental, not a rewrite.
+
+---
+
+## Architecture (Phase 0–1)
+
+| Area | Location |
+|------|----------|
+| Design tokens / type / spacing | `src/styles/` |
+| Layout chrome | `src/components/layout/` |
+| Home sections | `src/components/sections/` |
+| CMS loaders | `src/lib/content.ts` |
+| SEO helpers | `src/lib/seo.ts`, `src/app/robots.ts`, `src/app/sitemap.ts` |
+| Perf / a11y docs | `docs/performance.md`, `docs/accessibility-checklist.md` |
+
+Set `NEXT_PUBLIC_SITE_URL` (see `.env.example`) for correct canonicals.
+
+**Migration:** Phase 0–2 complete. See `docs/redirects.md` and Verdant migration strategy.
 
 ---
 

@@ -5,11 +5,11 @@ backend:
 media_folder: public/images/uploads
 public_folder: /images/uploads
 
-# Enable local_backend for development (run `npx decap-server` alongside `next dev`)
-# local_backend: true
+# On localhost, Decap uses the local proxy (no Netlify Identity login).
+# Production still uses Git Gateway + Netlify Identity on the live site.
+local_backend: true
 
 collections:
-  # ─── SITE SETTINGS ───────────────────────────────────────
   - name: settings
     label: Site Settings
     files:
@@ -19,37 +19,75 @@ collections:
         fields:
           - { label: "Site Title", name: siteTitle, widget: string }
           - { label: "Tagline", name: tagline, widget: string }
-          - { label: "Hero Headline", name: heroHeadline, widget: string }
-          - { label: "Hero Sub-headline", name: heroSubheadline, widget: text }
+          - { label: "Hero Headline (promise)", name: heroHeadline, widget: string }
+          - { label: "Hero Sub-headline (support line)", name: heroSubheadline, widget: text }
+          - { label: "Primary CTA Label", name: primaryCtaLabel, widget: string, required: false, default: "Start a conversation" }
+          - { label: "Secondary CTA Label", name: secondaryCtaLabel, widget: string, required: false, default: "View selected work" }
+          - { label: "Default SEO Description", name: defaultSeoDescription, widget: text, required: false }
+          - { label: "Default OG / Social Image", name: ogImage, widget: image, required: false }
+          - { label: "Verdant Holdings URL", name: verdantUrl, widget: string, required: false }
+          - { label: "Home — Studio teaser label", name: homeStudioLabel, widget: string, required: false }
+          - { label: "Home — Studio teaser title", name: homeStudioTitle, widget: string, required: false }
+          - { label: "Home — CTA band heading", name: homeCtaHeading, widget: string, required: false }
+          - { label: "Home — CTA band body", name: homeCtaBody, widget: text, required: false }
           - { label: "Email", name: email, widget: string }
+          - { label: "Hero Image (full-bleed plane)", name: heroImage, widget: image, required: false }
           - { label: "WhatsApp Number (international format, e.g. +231773295060)", name: whatsapp, widget: string }
           - { label: "Location", name: location, widget: string }
-          - { label: "GitHub URL", name: github, widget: string, required: false }
+          - { label: "GitHub URL (optional — unused on site)", name: github, widget: string, required: false }
           - { label: "LinkedIn URL", name: linkedin, widget: string, required: false }
           - { label: "Profile Photo", name: profilePhoto, widget: image }
-          - { label: "Hero Mockup Image", name: heroImage, widget: image, required: false }
           - { label: "Our Story (Paragraph 1)", name: aboutPara1, widget: text }
           - { label: "Our Story (Paragraph 2)", name: aboutPara2, widget: text, required: false }
           - { label: "Company Profile (PDF)", name: cvFile, widget: file, required: false }
 
-  # ─── PROJECTS ────────────────────────────────────────────
   - name: projects
-    label: Projects
+    label: Case Studies
     folder: content/projects
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Project Title", name: title, widget: string }
-      - { label: "Short Description (1–2 sentences)", name: description, widget: text }
-      - { label: "Timeline / Date (e.g. Jan 2024 – Mar 2024)", name: timeline, widget: string }
-      - { label: "Category", name: category, widget: select, options: ["Web Design", "Development", "WordPress", "QA", "Brand Identity"] }
-      - { label: "Live URL", name: url, widget: string }
-      - { label: "Screenshot", name: image, widget: image }
+      - { label: "Title", name: title, widget: string }
+      - { label: "Client", name: client, widget: string, required: false }
+      - { label: "Industry", name: industry, widget: string, required: false }
+      - { label: "Short Summary (1–2 sentences)", name: description, widget: text }
+      - { label: "Timeline / Date", name: timeline, widget: string, required: false }
+      - { label: "Category (internal)", name: category, widget: select, options: ["Website", "Brand", "Digital product", "Systems"], required: false }
+      - { label: "Live URL", name: url, widget: string, required: false }
+      - { label: "Hero / Cover Image", name: image, widget: image }
       - { label: "Featured?", name: featured, widget: boolean, default: false }
       - { label: "Sort Order (lower = first)", name: order, widget: number, default: 99 }
-      - { label: "Technologies Used (comma-separated)", name: tech, widget: string, required: false }
+      - { label: "Business Challenge", name: problem, widget: text, required: false }
+      - { label: "Solution", name: approach, widget: text, required: false }
+      - { label: "Business Outcomes", name: outcomes, widget: text, required: false }
+      - { label: "Value Delivered", name: valueDelivered, widget: text, required: false }
+      - { label: "Integrity & Craft Notes (optional)", name: craftNotes, widget: text, required: false }
+      - { label: "SEO Description (optional)", name: seoDescription, widget: text, required: false }
 
-  # ─── TESTIMONIALS ────────────────────────────────────────
+  - name: pages
+    label: Pages
+    folder: content/pages
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields:
+      - { label: "Title", name: title, widget: string }
+      - { label: "SEO Description", name: description, widget: text, required: false }
+      - { label: "Body", name: body, widget: markdown, required: false }
+
+  - name: people
+    label: People
+    folder: content/people
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    fields:
+      - { label: "Name", name: name, widget: string }
+      - { label: "Role", name: role, widget: string }
+      - { label: "Short bio", name: bio, widget: text }
+      - { label: "Photo", name: photo, widget: image, required: false }
+      - { label: "Sort Order (lower = first)", name: order, widget: number, default: 99 }
+
   - name: testimonials
     label: Testimonials
     folder: content/testimonials
@@ -62,7 +100,19 @@ collections:
       - { label: "Client Photo", name: photo, widget: image, required: false }
       - { label: "Sort Order", name: order, widget: number, default: 99 }
 
-  # ─── SERVICES ────────────────────────────────────────────
+  - name: resources
+    label: Resources
+    folder: content/resources
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: title, widget: string }
+      - { label: "Summary", name: summary, widget: text }
+      - { label: "Type", name: type, widget: select, options: ["Guide", "Checklist", "PDF", "Note"], default: "Guide" }
+      - { label: "URL (path, file, or external)", name: url, widget: string }
+      - { label: "Sort Order (lower = first)", name: order, widget: number, default: 99 }
+      - { label: "Body notes (optional)", name: body, widget: markdown, required: false }
+
   - name: services
     label: Services
     files:
@@ -75,9 +125,11 @@ collections:
             widget: list
             fields:
               - { label: "Title", name: title, widget: string }
-              - { label: "Tagline", name: tagline, widget: string }
-              - { label: "Icon (filename in /public/images/icons/)", name: icon, widget: string }
-              - label: Sub-services
+              - { label: "Tagline (business problem framing)", name: tagline, widget: string }
+              - { label: "Icon (filename in /public/images/Icons/)", name: icon, widget: string, required: false }
+              - label: Outcomes / capabilities
                 name: items
                 widget: list
                 field: { label: Item, name: item, widget: string }
+              - { label: "Good fit", name: fit, widget: text, required: false }
+              - { label: "Not a fit", name: nonFit, widget: text, required: false }

@@ -1,20 +1,55 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex" />
   <title>Dubard Studio — Content Manager</title>
+  <style>
+    html, body { margin: 0; min-height: 100%; background: #fff; }
+  </style>
 </head>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/decap-cms@3.0.0/dist/decap-cms.min.js"></script>
+  <!--
+    Static Decap shell — must stay outside the Next.js React tree.
+    Localhost: local_backend (no Identity password).
+    Production: Netlify Identity + Git Gateway.
+  -->
   <script>
-    (function init() {
-      if (typeof DecapCMS !== 'undefined') {
-        DecapCMS.init({ config: '/admin/config.yml' });
-      } else {
-        setTimeout(init, 300);
+    (function () {
+      var isLocal =
+        window.location.hostname === 'localhost' ||
+        window.location.hostname === '127.0.0.1';
+
+      function loadScript(src, onload) {
+        var s = document.createElement('script');
+        s.src = src;
+        if (onload) s.onload = onload;
+        document.body.appendChild(s);
       }
+
+      function loadCms() {
+        loadScript('https://cdn.jsdelivr.net/npm/decap-cms@3.1.2/dist/decap-cms.js');
+      }
+
+      if (isLocal) {
+        // Skip Netlify Identity on localhost — use decap-server + local_backend
+        loadCms();
+        return;
+      }
+
+      loadScript('https://identity.netlify.com/v1/netlify-identity-widget.js', function () {
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on('init', function (user) {
+            if (!user) {
+              window.netlifyIdentity.on('login', function () {
+                document.location.href = '/admin/index.html';
+              });
+            }
+          });
+        }
+        loadCms();
+      });
     })();
   </script>
 </body>

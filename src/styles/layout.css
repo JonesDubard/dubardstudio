@@ -1,0 +1,11 @@
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--container-pad-x);
+}
+
+section { padding: var(--section-y) 0; }
+
+@media (max-width: 900px) {
+  section { padding: var(--section-y-md) 0; }
+}

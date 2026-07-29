@@ -1,25 +1,25 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { getSettings } from '@/lib/content';
+import { buildPageMetadata } from '@/lib/seo';
+import { fontBody, fontDisplay, fontMono } from '@/lib/fonts';
 
 export async function generateMetadata(): Promise<Metadata> {
   const s = getSettings();
-  return {
-    title: `${s.siteTitle} — Web Design & Development`,
-    description: s.heroSubheadline,
-    openGraph: {
-      title: s.siteTitle,
-      description: s.heroSubheadline,
-      type: 'website',
-    },
-  };
+  return buildPageMetadata({
+    description: s.defaultSeoDescription || s.heroSubheadline,
+    ogImage: s.ogImage || s.heroImage,
+  });
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${fontDisplay.variable} ${fontBody.variable} ${fontMono.variable}`}
+      suppressHydrationWarning
+    >
       <head>
-        {/* Prevent flash of wrong theme */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -34,28 +34,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             `,
           }}
         />
-        {/* Netlify Identity for CMS auth */}
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" async />
       </head>
-      <body>
-        {children}
-        {/* Netlify Identity redirect helper */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              if (window.netlifyIdentity) {
-                window.netlifyIdentity.on("init", user => {
-                  if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                      document.location.href = "/admin/";
-                    });
-                  }
-                });
-              }
-            `,
-          }}
-        />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

@@ -1,0 +1,28 @@
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  letter-spacing: var(--text-display-tracking);
+  color: var(--text);
+}
+
+.section-label {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-label-size);
+  font-weight: 500;
+  letter-spacing: var(--text-label-tracking);
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  margin-bottom: var(--space-2);
+}
+
+.section-desc {
+  color: var(--muted);
+  max-width: 52ch;
+}

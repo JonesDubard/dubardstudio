@@ -2,16 +2,22 @@
   command = "npm run build"
   publish = "out"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+[build.environment]
+  NEXT_PUBLIC_SITE_URL = "https://dubardstudio.netlify.app"
 
 [[headers]]
   for = "/admin/*"
-  [headers.values]
+    [headers.values]
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
 
+# Static Decap HTML — do not route /admin through the Next React app
 [[redirects]]
-  from = "/admin/*"
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/admin/"
   to = "/admin/index.html"
   status = 200

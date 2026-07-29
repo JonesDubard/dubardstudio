@@ -1,48 +1,121 @@
 {
   "services": [
     {
-      "title": "Brand Identity & Strategy",
-      "tagline": "For: \"We don't look like a real business yet.\" We build the logo, colors, and message that make customers trust you before they've even spoken to you.",
+      "title": "Brand identity & positioning",
+      "tagline": "When customers cannot tell who you are, or why they should trust you, we build the identity and message that make the business look established before the first conversation.",
       "icon": "art.png",
       "items": [
-        "Logo & Visual Identity",
-        "Brand Messaging & Positioning",
-        "Style Guides",
-        "Marketing & Collateral Design"
-      ]
+        "Visual identity systems",
+        "Positioning and messaging",
+        "Brand guidelines for teams",
+        "Marketing collateral that stays on-brand"
+      ],
+      "fit": "Organizations renewing identity with real stakes in trust and growth.",
+      "nonFit": "Trend-only refreshes or work that requires deceptive claims."
     },
     {
-      "title": "Website Design & Development",
-      "tagline": "For: \"Customers can't find us, or don't trust what they find.\" We design and build fast, mobile‑first websites that work on the same phones your customers use, and turn visits into calls, orders, and sign‑ups.",
+      "title": "Websites that convert honestly",
+      "tagline": "When visitors cannot find you, or do not trust what they find, we design and build sites that clarify the offer, earn credibility, and turn attention into qualified inquiries.",
       "icon": "code.png",
       "items": [
-        "UI/UX Design",
-        "WordPress & Custom CMS",
-        "Front‑end Development (HTML/CSS/JS, React)",
-        "Performance & Mobile‑First Optimization"
-      ]
+        "Experience and interface design",
+        "Marketing and product sites",
+        "Content models editors can manage",
+        "Performance and accessibility as craft"
+      ],
+      "fit": "Teams ready to treat the website as a business system, not a brochure dump.",
+      "nonFit": "Disposable campaign microsites with no stewardship plan."
     },
     {
-      "title": "Quality Assurance & Support",
-      "tagline": "For: \"We launched something and it broke, or no one tested it.\" We test every page, button, and form across real devices before launch, and stay on for support after, so a broken site never costs you a sale.",
+      "title": "Quality assurance (QA)",
+      "tagline": "When a launch broke, or never got tested, we verify journeys across real devices, catch what blocks revenue, and document issues so the business can ship with confidence.",
       "icon": "verified.png",
       "items": [
-        "Functional & Cross‑Device Testing",
-        "Usability & Accessibility Reviews",
-        "Bug Reporting & Resolution",
-        "Post‑Launch Maintenance & Support"
-      ]
+        "Functional and cross-device testing",
+        "Usability and accessibility reviews",
+        "Bug reporting and resolution support",
+        "Pre-launch and regression test passes"
+      ],
+      "fit": "Businesses that need reliability as much as design before or after go-live.",
+      "nonFit": "Rush launches that forbid accessibility or quality gates."
     },
     {
-      "title": "Digital & IT Solutions",
-      "tagline": "For: \"We need more than a website; we need our systems to work together.\" We set up the tools behind the scenes, booking systems, inventory, internal dashboards, so your business runs as smoothly online as it does in person.",
+      "title": "Mobile Money API integration",
+      "tagline": "When customers expect to pay with Orange Money or MTN Mobile Money, we integrate those rails into your site or product so checkout and collections match how people actually pay.",
       "icon": "it-solutions.png",
       "items": [
-        "Booking & Scheduling Systems",
-        "Inventory Management Tools",
-        "Internal Dashboards & Reporting",
-        "Systems Integration & Automation"
-      ]
+        "Orange Money API integration",
+        "MTN Mobile Money (MoMo) API integration",
+        "Payment and collection flows that fit the customer journey",
+        "Error handling, receipts, and operator-ready handoff notes"
+      ],
+      "fit": "Businesses serving customers who pay by Mobile Money in Liberia and the region.",
+      "nonFit": "Projects without clear payment ownership, compliance readiness, or operator account access."
+    },
+    {
+      "title": "Workshops & capability building",
+      "tagline": "When your team needs shared language on brand, digital experience, or content operations, we facilitate focused workshops that leave people clearer and able to act.",
+      "icon": "art.png",
+      "items": [
+        "Brand and messaging alignment workshops",
+        "Digital experience and content ops sessions",
+        "Stakeholder discovery and fit workshops",
+        "Practical playbooks the team can keep using"
+      ],
+      "fit": "Teams that want decisions and skill transfer, not slide decks that gather dust.",
+      "nonFit": "Spectacles with no decision rights or follow-through owner."
+    },
+    {
+      "title": "Operations behind the brand",
+      "tagline": "When the public face is fine but the systems behind it are not, we connect booking, inventory, and internal tools so the business runs as smoothly online as it does in person.",
+      "icon": "it-solutions.png",
+      "items": [
+        "Booking and scheduling flows",
+        "Inventory and catalog tools",
+        "Internal dashboards",
+        "Integration and automation that serve operators"
+      ],
+      "fit": "Teams that need digital operations to match customer-facing craft.",
+      "nonFit": "Tool sprawl with no owner or outcome definition."
+    },
+    {
+      "title": "Ongoing care & stewardship",
+      "tagline": "When the site or product needs a partner after launch, we stay on for maintenance, improvements, and craft stewardship so trust does not erode over time.",
+      "icon": "verified.png",
+      "items": [
+        "Post-launch maintenance retainers",
+        "Content and campaign support",
+        "Performance and accessibility check-ins",
+        "Prioritized improvements tied to business goals"
+      ],
+      "fit": "Organizations that want continuity instead of agency churn.",
+      "nonFit": "One-off fire drills with no path to stewardship."
+    },
+    {
+      "title": "Essential digital presence",
+      "tagline": "When you need to look professional and easy to find online—Google, WhatsApp, social—without building a full website yet.",
+      "icon": "code.png",
+      "items": [
+        "Google Business / search visibility basics",
+        "WhatsApp Business setup that matches the brand",
+        "Core social profile cleanup and consistency",
+        "Simple monthly check-ins so presence does not go stale"
+      ],
+      "fit": "Small retail, salons, clinics, and solo services with customers but weak or incomplete online presence.",
+      "nonFit": "Teams that need a full custom website build, daily heavy content production, or committee-only decisions with no reachable owner."
+    },
+    {
+      "title": "Standard digital presence",
+      "tagline": "When you already have some presence but no consistency—and you want a ready monthly plan you can approve and run, not a full outsourcing takeover.",
+      "icon": "verified.png",
+      "items": [
+        "Everything in Essential, with deeper consistency across channels",
+        "Monthly content calendar you approve and post",
+        "Review and trust-signal guidance (how customers find and trust you)",
+        "Light guidance so informal marketing becomes a repeatable rhythm"
+      ],
+      "fit": "Growing SMEs, restaurants, and professional services that want structure without a full managed content team.",
+      "nonFit": "Daily/heavy managed content (future Premium territory), or projects that should be a full website engagement instead."
     }
   ]
 }

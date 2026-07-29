@@ -1,11 +1,32 @@
 <!DOCTYPE html>
-<html>
-<body>
-  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-    <input name="name" />
-    <input name="email" />
-    <textarea name="message"></textarea>
-    <input name="bot-field" />
-  </form>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Netlify Forms detection</title>
+  </head>
+  <body>
+    <!-- Hidden forms for Netlify build-time detection. Keep in sync with React forms. -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="email" />
+      <input name="organization" />
+      <input name="role" />
+      <select name="help-with"></select>
+      <textarea name="project-summary"></textarea>
+      <input name="timeline" />
+      <input name="referral" />
+      <input name="verdant-sister" />
+    </form>
+
+    <form name="booking" netlify netlify-honeypot="bot-field" hidden>
+      <input name="bot-field" />
+      <input name="name" />
+      <input name="email" />
+      <input name="organization" />
+      <select name="preferred-window"></select>
+      <input name="timezone" />
+      <textarea name="discussion"></textarea>
+    </form>
+  </body>
 </html>
