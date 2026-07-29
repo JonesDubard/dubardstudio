@@ -3,7 +3,7 @@
   publish = "out"
 
 [build.environment]
-  NEXT_PUBLIC_SITE_URL = "https://dubardstudio.netlify.app"
+  NEXT_PUBLIC_SITE_URL = "https://www.dubardstudio.it.com"
 
 [[headers]]
   for = "/admin/*"

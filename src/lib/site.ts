@@ -6,7 +6,7 @@ export const SITE_NAME = 'Dubard Studio';
 
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, '') ||
-  'https://dubardstudio.netlify.app';
+  'https://www.dubardstudio.it.com';
 
 /**
  * Public Holding URL — set NEXT_PUBLIC_VERDANT_URL when the Holding site is live.
