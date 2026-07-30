@@ -9,7 +9,7 @@ category: Digital product
 url: https://www.slipdesk.com
 image: /images/uploads/skipdek.png
 featured: true
-order: 5
+order: 1
 problem: Liberian organizations often run payroll, HR records, approvals, and
   compliance across spreadsheets and disconnected tools, which creates errors,
   delays, and weak audit trails.
