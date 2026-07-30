@@ -10,7 +10,7 @@ category: Systems
 url: https://tikylr.com
 image: /images/uploads/tiky-site-view.png
 featured: true
-order: 4
+order: 3
 problem: Event organisers in Liberia needed a credible way to promote events,
   sell tickets, and manage attendance without relying on fragmented social posts
   and cash-only door sales that lose demand and trust.
